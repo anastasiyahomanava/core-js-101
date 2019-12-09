@@ -19,8 +19,8 @@
  *   5, 10 => 50
  *   5, 5  => 25
  */
-function getRectangleArea(/* width, height */) {
-  throw new Error('Not implemented');
+function getRectangleArea(width, height) {
+  return width * height;
 }
 
 
@@ -35,8 +35,8 @@ function getRectangleArea(/* width, height */) {
  *   3.14 => 19.729201864543903
  *   0    => 0
  */
-function getCicleCircumference(/* radius */) {
-  throw new Error('Not implemented');
+function getCicleCircumference(radius) {
+  return Math.PI * 2 * radius;
 }
 
 /**
@@ -52,6 +52,12 @@ function getCicleCircumference(/* radius */) {
  *  -3, 3  => 0
  */
 function getAverage(/* value1, value2 */) {
+  // const sum = value1 + value2;
+  // const average = sum / 2;
+  // if (sum <= 0) {
+  //   return 0;
+  // }
+  // return average;
   throw new Error('Not implemented');
 }
 
@@ -125,8 +131,8 @@ function getAngleBetweenVectors(/* x1, y1, x2, y2 */) {
  *     5     => 5
  *     0     => 0
  */
-function getLastDigit(/* value */) {
-  throw new Error('Not implemented');
+function getLastDigit(value) {
+  return value.toString().split('').pop();
 }
 
 
@@ -141,8 +147,8 @@ function getLastDigit(/* value */) {
  *     '37'     => 37
  * '-525.5'     => -525.5
  */
-function parseNumberFromString(/* value */) {
-  throw new Error('Not implemented');
+function parseNumberFromString(value) {
+  return parseFloat(value);
 }
 
 /**

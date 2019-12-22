@@ -171,7 +171,7 @@ function partialUsingArguments(fn, ...args1) {
  */
 function getIdGeneratorFunction(startFrom) {
   let counter = startFrom - 1;
-  return function () {
+  return () => {
     counter += 1;
     return counter;
   };
